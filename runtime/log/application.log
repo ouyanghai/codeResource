@@ -1,0 +1,182 @@
+2017/09/22 10:44:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wwwroot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wwwroot\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wwwroot\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wwwroot\data\httpdocs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://local.zhaoqiye.net/
+---
+2017/09/22 10:45:37 [error] [exception.CException] exception 'CException' with message 'CDbCommand and its behaviors do not have a method or closure named "queryColum".' in D:\wwwroot\framework\base\CComponent.php:265
+Stack trace:
+#0 D:\wwwroot\data\protected\controllers\WebController.php(14): CComponent->__call('queryColum', Array)
+#1 D:\wwwroot\data\protected\controllers\WebController.php(14): CDbCommand->queryColum()
+#2 D:\wwwroot\framework\web\actions\CInlineAction.php(49): WebController->actionGet()
+#3 D:\wwwroot\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 D:\wwwroot\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 D:\wwwroot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wwwroot\framework\web\CWebApplication.php(282): CController->run('get')
+#7 D:\wwwroot\framework\web\CWebApplication.php(141): CWebApplication->runController('web/get')
+#8 D:\wwwroot\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\wwwroot\data\httpdocs\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/web/get
+---
+2017/12/14 18:07:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message '无法解析请求 "favicon.ico"。' in D:\wwwroot\framework\web\CWebApplication.php:286
+Stack trace:
+#0 D:\wwwroot\framework\web\CWebApplication.php(141): CWebApplication->runController('favicon.ico')
+#1 D:\wwwroot\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#2 D:\wwwroot\data\httpdocs\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/favicon.ico
+HTTP_REFERER=http://local.zhaoqiye.net/
+---
+2017/12/14 18:11:13 [error] [exception.CException] exception 'CException' with message 'CAssetManager.basePath "D:\wwwroot\data\assets" 是无效的. 请确定它是一个可被 Web server process 写入资料的目录.' in D:\wwwroot\framework\web\CAssetManager.php:138
+Stack trace:
+#0 D:\wwwroot\framework\web\CAssetManager.php(123): CAssetManager->setBasePath('D:\\wwwroot\\data...')
+#1 D:\wwwroot\framework\web\CAssetManager.php(217): CAssetManager->getBasePath()
+#2 D:\wwwroot\data\protected\components\Controller.php(38): CAssetManager->publish('D:\\wwwroot\\data...', false, -1, true)
+#3 D:\wwwroot\data\protected\components\Controller.php(27): Controller->publish('app', 'D:\\wwwroot\\data...')
+#4 D:\wwwroot\data\protected\components\TopController.php(4): Controller->init()
+#5 D:\wwwroot\data\protected\controllers\WebController.php(4): TopController->init()
+#6 D:\wwwroot\framework\web\CWebApplication.php(281): WebController->init()
+#7 D:\wwwroot\framework\web\CWebApplication.php(141): CWebApplication->runController('')
+#8 D:\wwwroot\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\wwwroot\data\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/
+---
+2017/12/14 18:19:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "regpage.php" 动作.' in D:\wwwroot\framework\web\CController.php:483
+Stack trace:
+#0 D:\wwwroot\framework\web\CController.php(270): CController->missingAction('regpage.php')
+#1 D:\wwwroot\framework\web\CWebApplication.php(282): CController->run('regpage.php')
+#2 D:\wwwroot\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/regpage.p...')
+#3 D:\wwwroot\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\wwwroot\data\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/index.php/admin/regpage.php
+---
+2017/12/14 18:19:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message '系统无法找到请求的 "regpage.php" 动作.' in D:\wwwroot\framework\web\CController.php:483
+Stack trace:
+#0 D:\wwwroot\framework\web\CController.php(270): CController->missingAction('regpage.php')
+#1 D:\wwwroot\framework\web\CWebApplication.php(282): CController->run('regpage.php')
+#2 D:\wwwroot\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/regpage.p...')
+#3 D:\wwwroot\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#4 D:\wwwroot\data\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/admin/regpage.php
+---
+2017/12/14 18:21:15 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '13008821086' for key 'tel'. The SQL statement executed was: insert into `phone_user` (nick,password,tel,created,updated,deadline,token,remain) values('ouyang','123456','13008821086','2017-12-14 18:21:15','2017-12-14 18:21:15','2018-01-14','ded71c7e5799dc74336ed72a2822e7dd',100).
+in D:\wwwroot\data\protected\controllers\AdminController.php (102)
+in D:\wwwroot\data\index.php (13)
+2017/12/14 18:21:15 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '13008821086' for key 'tel'. The SQL statement executed was: insert into `phone_user` (nick,password,tel,created,updated,deadline,token,remain) values('ouyang','123456','13008821086','2017-12-14 18:21:15','2017-12-14 18:21:15','2018-01-14','ded71c7e5799dc74336ed72a2822e7dd',100)' in D:\wwwroot\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\wwwroot\data\protected\controllers\AdminController.php(102): CDbCommand->execute()
+#1 D:\wwwroot\framework\web\actions\CInlineAction.php(49): AdminController->actionDoRegister()
+#2 D:\wwwroot\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 D:\wwwroot\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 D:\wwwroot\framework\web\CController.php(291): CFilterChain->run()
+#5 D:\wwwroot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wwwroot\framework\web\CWebApplication.php(282): CController->run('doregister')
+#7 D:\wwwroot\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/doregiste...')
+#8 D:\wwwroot\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\wwwroot\data\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/doregister
+HTTP_REFERER=http://local.zhaoqiye.net/admin/regpage
+---
+2017/12/14 18:21:25 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '13008821086' for key 'tel'. The SQL statement executed was: insert into `phone_user` (nick,password,tel,created,updated,deadline,token,remain) values('ouyang','123456','13008821086','2017-12-14 18:21:25','2017-12-14 18:21:25','2018-01-14','3a19276b53d53d5a442f0abc8a03e85f',100).
+in D:\wwwroot\data\protected\controllers\AdminController.php (102)
+in D:\wwwroot\data\index.php (13)
+2017/12/14 18:21:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '13008821086' for key 'tel'. The SQL statement executed was: insert into `phone_user` (nick,password,tel,created,updated,deadline,token,remain) values('ouyang','123456','13008821086','2017-12-14 18:21:25','2017-12-14 18:21:25','2018-01-14','3a19276b53d53d5a442f0abc8a03e85f',100)' in D:\wwwroot\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\wwwroot\data\protected\controllers\AdminController.php(102): CDbCommand->execute()
+#1 D:\wwwroot\framework\web\actions\CInlineAction.php(49): AdminController->actionDoRegister()
+#2 D:\wwwroot\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 D:\wwwroot\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 D:\wwwroot\framework\web\CController.php(291): CFilterChain->run()
+#5 D:\wwwroot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wwwroot\framework\web\CWebApplication.php(282): CController->run('doregister')
+#7 D:\wwwroot\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/doregiste...')
+#8 D:\wwwroot\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\wwwroot\data\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/doregister
+HTTP_REFERER=http://local.zhaoqiye.net/admin/regpage
+---
+2017/12/14 18:23:19 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '13008821086' for key 'tel'. The SQL statement executed was: insert into `phone_user` (nick,password,tel,created,updated,deadline,token,remain) values('13008821086','123456','13008821086','2017-12-14 18:23:19','2017-12-14 18:23:19','2018-01-14','093f5fc41625ab8063ffc6341ce55662',100).
+in D:\wwwroot\data\protected\controllers\AdminController.php (102)
+in D:\wwwroot\data\index.php (13)
+2017/12/14 18:23:19 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '13008821086' for key 'tel'. The SQL statement executed was: insert into `phone_user` (nick,password,tel,created,updated,deadline,token,remain) values('13008821086','123456','13008821086','2017-12-14 18:23:19','2017-12-14 18:23:19','2018-01-14','093f5fc41625ab8063ffc6341ce55662',100)' in D:\wwwroot\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\wwwroot\data\protected\controllers\AdminController.php(102): CDbCommand->execute()
+#1 D:\wwwroot\framework\web\actions\CInlineAction.php(49): AdminController->actionDoRegister()
+#2 D:\wwwroot\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 D:\wwwroot\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 D:\wwwroot\framework\web\CController.php(291): CFilterChain->run()
+#5 D:\wwwroot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wwwroot\framework\web\CWebApplication.php(282): CController->run('doregister')
+#7 D:\wwwroot\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/doregiste...')
+#8 D:\wwwroot\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\wwwroot\data\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/doregister
+HTTP_REFERER=http://local.zhaoqiye.net/admin/regpage
+---
+2017/12/14 18:26:23 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '13008821086' for key 'tel'. The SQL statement executed was: insert into `phone_user` (nick,password,tel,created,updated,deadline,token,remain) values('13008821086','123456','13008821086','2017-12-14 18:26:23','2017-12-14 18:26:23','2018-01-14','1f1eda29c90a8d9b93c4b781190d2a8c',100).
+in D:\wwwroot\data\protected\controllers\AdminController.php (102)
+in D:\wwwroot\data\index.php (13)
+2017/12/14 18:26:23 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '13008821086' for key 'tel'. The SQL statement executed was: insert into `phone_user` (nick,password,tel,created,updated,deadline,token,remain) values('13008821086','123456','13008821086','2017-12-14 18:26:23','2017-12-14 18:26:23','2018-01-14','1f1eda29c90a8d9b93c4b781190d2a8c',100)' in D:\wwwroot\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\wwwroot\data\protected\controllers\AdminController.php(102): CDbCommand->execute()
+#1 D:\wwwroot\framework\web\actions\CInlineAction.php(49): AdminController->actionDoRegister()
+#2 D:\wwwroot\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 D:\wwwroot\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 D:\wwwroot\framework\web\CController.php(291): CFilterChain->run()
+#5 D:\wwwroot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wwwroot\framework\web\CWebApplication.php(282): CController->run('doregister')
+#7 D:\wwwroot\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/doregiste...')
+#8 D:\wwwroot\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\wwwroot\data\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/doregister
+HTTP_REFERER=http://local.zhaoqiye.net/admin/regpage
+---
+2017/12/14 18:29:38 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '13008821086' for key 'tel'. The SQL statement executed was: insert into `phone_user` (nick,password,tel,created,updated,deadline,token,remain) values('ouyang','123456','13008821086','2017-12-14 18:29:38','2017-12-14 18:29:38','2018-01-14','2fd7b9e45ef49d4de009e535c60de012',100).
+in D:\wwwroot\data\protected\controllers\AdminController.php (102)
+in D:\wwwroot\data\index.php (13)
+2017/12/14 18:29:38 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '13008821086' for key 'tel'. The SQL statement executed was: insert into `phone_user` (nick,password,tel,created,updated,deadline,token,remain) values('ouyang','123456','13008821086','2017-12-14 18:29:38','2017-12-14 18:29:38','2018-01-14','2fd7b9e45ef49d4de009e535c60de012',100)' in D:\wwwroot\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\wwwroot\data\protected\controllers\AdminController.php(102): CDbCommand->execute()
+#1 D:\wwwroot\framework\web\actions\CInlineAction.php(49): AdminController->actionDoRegister()
+#2 D:\wwwroot\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 D:\wwwroot\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 D:\wwwroot\framework\web\CController.php(291): CFilterChain->run()
+#5 D:\wwwroot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wwwroot\framework\web\CWebApplication.php(282): CController->run('doregister')
+#7 D:\wwwroot\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/doregiste...')
+#8 D:\wwwroot\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\wwwroot\data\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/doregister
+HTTP_REFERER=http://local.zhaoqiye.net/admin/regPage
+---
+2017/12/14 18:30:16 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '13008821086' for key 'tel'. The SQL statement executed was: insert into `phone_user` (nick,password,tel,created,updated,deadline,token,remain) values('ouyang','13008821086','13008821086','2017-12-14 18:30:16','2017-12-14 18:30:16','2018-01-14','988ba485b70fd35439906d980870a532',100).
+in D:\wwwroot\data\protected\controllers\AdminController.php (102)
+in D:\wwwroot\data\index.php (13)
+2017/12/14 18:30:16 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand 无法执行 SQL 语句: SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '13008821086' for key 'tel'. The SQL statement executed was: insert into `phone_user` (nick,password,tel,created,updated,deadline,token,remain) values('ouyang','13008821086','13008821086','2017-12-14 18:30:16','2017-12-14 18:30:16','2018-01-14','988ba485b70fd35439906d980870a532',100)' in D:\wwwroot\framework\db\CDbCommand.php:357
+Stack trace:
+#0 D:\wwwroot\data\protected\controllers\AdminController.php(102): CDbCommand->execute()
+#1 D:\wwwroot\framework\web\actions\CInlineAction.php(49): AdminController->actionDoRegister()
+#2 D:\wwwroot\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 D:\wwwroot\framework\web\filters\CFilterChain.php(133): CController->runAction(Object(CInlineAction))
+#4 D:\wwwroot\framework\web\CController.php(291): CFilterChain->run()
+#5 D:\wwwroot\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 D:\wwwroot\framework\web\CWebApplication.php(282): CController->run('doregister')
+#7 D:\wwwroot\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/doregiste...')
+#8 D:\wwwroot\framework\base\CApplication.php(169): CWebApplication->processRequest()
+#9 D:\wwwroot\data\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/admin/doregister
+HTTP_REFERER=http://local.zhaoqiye.net/admin/regPage
+---
